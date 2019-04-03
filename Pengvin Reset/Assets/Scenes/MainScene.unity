@@ -199,22 +199,6 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 8732769545361582846, guid: 3e009d45cb473044892ebcd9d428eeb7,
-        type: 3}
-      propertyPath: boostPower
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8732769545361582846, guid: 3e009d45cb473044892ebcd9d428eeb7,
-        type: 3}
-      propertyPath: obstacleBouncePower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8732769545361582846, guid: 3e009d45cb473044892ebcd9d428eeb7,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 4378080642034543933, guid: c51f8e7b9e7f5234da318f8f4a02dca5,
-        type: 3}
     - target: {fileID: 1703766294, guid: 3e009d45cb473044892ebcd9d428eeb7, type: 3}
       propertyPath: m_Offset.x
       value: 0.13726115
@@ -235,6 +219,22 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8732769545361582846, guid: 3e009d45cb473044892ebcd9d428eeb7,
+        type: 3}
+      propertyPath: boostPower
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8732769545361582846, guid: 3e009d45cb473044892ebcd9d428eeb7,
+        type: 3}
+      propertyPath: obstacleBouncePower
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8732769545361582846, guid: 3e009d45cb473044892ebcd9d428eeb7,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 4378080642034543933, guid: c51f8e7b9e7f5234da318f8f4a02dca5,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e009d45cb473044892ebcd9d428eeb7, type: 3}
 --- !u!4 &59971126 stripped
@@ -2024,7 +2024,7 @@ ParticleSystem:
     uvChannelMask: -1
     randomRow: 1
     sprites:
-    - sprite: {fileID: 21300000, guid: 42f8dd4ba3874aa488a91b6eda73445a, type: 3}
+    - sprite: {fileID: 21300000, guid: ff581a04d11b4cf44b14cfe6f6d1e824, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -5795,7 +5795,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cc4cd72db2f30f42a8560911dbf88b2, type: 3}
+  m_Script: {fileID: 11500000, guid: ea15297d9a851404a9eb9898b84bac67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!20 &519420031
@@ -6721,9 +6721,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d335f2925b79f94dac7d3d6d3acc364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedPrefab: {fileID: 6993368588047302735, guid: d0a5c043bfbe42e44b7e4947744f0538,
-    type: 3}
-  respawnTime: 70
 --- !u!114 &803412107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6736,9 +6733,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e7a2ecfb4d6fb46b4fb750ed0580c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPrefab: {fileID: 441990580454816587, guid: 84509eef524341142a9dbacecf98a9fd,
-    type: 3}
-  respawnTime: 90
 --- !u!4 &803412108
 Transform:
   m_ObjectHideFlags: 0
@@ -7600,10 +7594,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1243070084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 451c162bc250a1b4d8a20da9f2f9d78b, type: 3}
+  m_Script: {fileID: 11500000, guid: 047692c0c64c9e24498159f9ff74b29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 2708810156318443083, guid: e21748b207024224cbad3c5246e99bd5,
+  obstacle: {fileID: 2708810156318443083, guid: ba4c53869606a91469b402a1e14c742a,
     type: 3}
 --- !u!1 &1243956052
 GameObject:
@@ -8361,7 +8355,7 @@ PrefabInstance:
     - target: {fileID: 6137709314597395022, guid: ff9175890785d9846a3af4f9e9ebd52d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.23
+      value: 1.57
       objectReference: {fileID: 0}
     - target: {fileID: 6137709315141804390, guid: ff9175890785d9846a3af4f9e9ebd52d,
         type: 3}
