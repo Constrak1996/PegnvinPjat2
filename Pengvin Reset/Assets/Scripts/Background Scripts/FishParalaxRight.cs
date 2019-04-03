@@ -30,7 +30,7 @@ public class FishParalaxRight : MonoBehaviour
 
         if (transform.position.x >= jumpPosition)
         {
-            transform.Translate(30, 0, 0);
+            transform.Translate(-25, 0, 0);
         }
     }
 }
