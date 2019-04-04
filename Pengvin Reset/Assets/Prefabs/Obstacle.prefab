@@ -120,7 +120,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3318416344964811514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 679c7810d2a35d541ba359906ddf7c91, type: 3}
+  m_Script: {fileID: 11500000, guid: 23bd123b1336fef468a50249eea3c980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myCurve:
