@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     public static bool stunned;
 
+    public static bool explosionKnockback;
+
     private bool usedBoost;
 
     public float boostPower;
@@ -95,10 +97,25 @@ public class PlayerMovement : MonoBehaviour
             stunTime += Time.deltaTime;
             speed = 0;
 
-            transform.Translate(-direction * Time.deltaTime * obstacleBouncePower);
+            if (explosionKnockback)
+            {
+                if (usedBoost)
+                {
+                    transform.Translate(-direction * Time.deltaTime * 3);
+                }
+                else
+                {
+                    transform.Translate(-direction * Time.deltaTime * 7);
+                }
+            }
+            else
+            {
+                transform.Translate(-direction * Time.deltaTime * obstacleBouncePower);
+            }
 
             if (stunTime > 1)
             {
+                explosionKnockback = false;
                 stunned = false;
                 stunTime = 0;
                 speed = 20;
@@ -126,7 +143,6 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = 20;
         }
-
     }
 
     //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
@@ -154,5 +170,6 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(boostCooldown);
         usedBoost = false;
     }
+
 
 }
