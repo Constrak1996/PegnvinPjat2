@@ -4713,7 +4713,6 @@ GameObject:
   - component: {fileID: 2359703629836883900}
   - component: {fileID: 1703766294}
   - component: {fileID: 1703766295}
-  - component: {fileID: 904676672}
   - component: {fileID: 1439834800}
   m_Layer: 0
   m_Name: Player
@@ -4798,6 +4797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostPower: 5
+  boostCooldown: 2
   obstacleBouncePower: 2
   joystick: {fileID: 0}
 --- !u!50 &8732769545361582847
@@ -4876,18 +4876,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2488b3730f11bc45a664d2fc09e6f1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &904676672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8732769545361582842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53093d34d43ec1c4cb1300f7c9769693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1439834800
