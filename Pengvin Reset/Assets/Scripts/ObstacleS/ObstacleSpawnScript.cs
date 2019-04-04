@@ -40,7 +40,7 @@ public class ObstacleSpawnScript : MonoBehaviour
     {
         newSpawnRate += Time.deltaTime;
 
-        if (Time.time > nextSpawn && Time.time > 1)
+        if (Time.time > nextSpawn && Time.time > 14)
         {
             nextSpawn = Time.time + spawnRate;
             rndY = Random.Range(-7f, -1f);
