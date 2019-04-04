@@ -6,13 +6,20 @@ public class SixPackTrashSpawner : MonoBehaviour
 {
     public GameObject obstacle;
 
-    private float newSpawnRate = 15;
+    private float newSpawnRate;
 
     private float rndY;
 
     private Vector2 whereToSpawn;
 
-    private float spawnRate = 8;
+    // The rate at which the objects should be spawned
+    public float spawnRate;
+
+    // The value that should be subtracted from the spawnrate at a given time
+    public float spawnRateChange;
+
+    // That time that the spawnrate should be changed
+    public float spawnRateChangeTime;
 
     private float nextSpawn = 0.0f;
 
@@ -31,7 +38,9 @@ public class SixPackTrashSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > nextSpawn)
+        newSpawnRate += Time.deltaTime;
+
+        if (Time.time > nextSpawn && Time.time > 10)
         {
             nextSpawn = Time.time + spawnRate;
             rndY = Random.Range(-4.5f, 1.3f);
@@ -43,10 +52,10 @@ public class SixPackTrashSpawner : MonoBehaviour
             spriteRenderer.sprite = obstacles[spriteType];
         }
 
-        if (Time.deltaTime > newSpawnRate && spawnRate > 0)
+        if (newSpawnRate > spawnRateChangeTime && spawnRate > 5)
         {
-            spawnRate -= 0.5f;
-            newSpawnRate += 10;
+            spawnRate -= spawnRateChange;
+            newSpawnRate = 0;
         }
     }
 }

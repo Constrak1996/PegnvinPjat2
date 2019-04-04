@@ -5,13 +5,21 @@ using UnityEngine;
 public class NavalMine : MonoBehaviour
 {
     public GameObject Mine;
-    private float newSpawnRate = 25;
+
+    private float newSpawnRate;
 
     private float rndY;
 
     private Vector2 whereToSpawn;
 
-    private float spawnRate = 10;
+    // The rate at which the objects should be spawned
+    public float spawnRate;
+
+    // The value that should be subtracted from the spawnrate at a given time
+    public float spawnRateChange;
+
+    // That time that the spawnrate should be changed
+    public float spawnRateChangeTime;
 
     private float nextSpawn = 0.0f;
 
@@ -28,7 +36,10 @@ public class NavalMine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > nextSpawn)
+        newSpawnRate += Time.deltaTime;
+
+
+        if (Time.time > nextSpawn && Time.time > 20)
         {
             nextSpawn = Time.time + spawnRate;
             rndY = Random.Range(-7f, 1.3f);
@@ -37,10 +48,10 @@ public class NavalMine : MonoBehaviour
             GameObject gameObject = Instantiate(Mine, whereToSpawn, Quaternion.identity);
         }
 
-        if (Time.deltaTime > newSpawnRate && spawnRate > 0)
+        if (newSpawnRate > spawnRateChangeTime && spawnRate > 10)
         {
-            spawnRate -= 0.5f;
-            newSpawnRate += 10;
+            spawnRate -= spawnRateChange;
+            newSpawnRate = 0;
         }
 
     }
