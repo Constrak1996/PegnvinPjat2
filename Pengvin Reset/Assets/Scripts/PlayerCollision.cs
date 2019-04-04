@@ -35,7 +35,6 @@ public class PlayerCollision : MonoBehaviour
         {
             Score.score++;
             fishHeal += 1;
-            Debug.Log(fishHeal);
             Destroy(collision.gameObject);
         }
         else if (collision.tag == "DeathWall")
