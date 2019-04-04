@@ -48,7 +48,7 @@ public class NavalMine : MonoBehaviour
             GameObject gameObject = Instantiate(Mine, whereToSpawn, Quaternion.identity);
         }
 
-        if (newSpawnRate > spawnRateChangeTime && spawnRate > 10)
+        if (newSpawnRate > spawnRateChangeTime && spawnRate > 15)
         {
             spawnRate -= spawnRateChange;
             newSpawnRate = 0;

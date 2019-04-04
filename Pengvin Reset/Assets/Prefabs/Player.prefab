@@ -4799,7 +4799,8 @@ MonoBehaviour:
   boostPower: 5
   boostCooldown: 2
   obstacleBouncePower: 2
-  joystick: {fileID: 0}
+  joystick: {fileID: 4378080642034543933, guid: 588462c34cc79c847978ad6477ddd774,
+    type: 3}
 --- !u!50 &8732769545361582847
 Rigidbody2D:
   serializedVersion: 4

@@ -55,6 +55,8 @@ public class SixPackTrashSpawner : MonoBehaviour
         if (newSpawnRate > spawnRateChangeTime && spawnRate > 5)
         {
             spawnRate -= spawnRateChange;
+            SixPackTrashMovement.speed += 0.15f;
+            PlayerMovement.trashDragVariable += 0.0025f;
             newSpawnRate = 0;
         }
     }

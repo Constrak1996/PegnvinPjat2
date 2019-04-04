@@ -45,12 +45,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacle: {fileID: 3318416344964811514, guid: 6a1b0b3d3f49e8541ac0953a1583f986,
     type: 3}
-  spawnRate: 12
+  spawnRate: 20
   spawnRateChange: 1
   spawnRateChangeTime: 25
   obstacles:
-  - {fileID: 21300000, guid: 00064a52eb8a2df4ea9bd24f99d63132, type: 3}
-  - {fileID: 21300000, guid: a6d2b2266fcba0f42a963e18eaeaeb60, type: 3}
-  - {fileID: 21300000, guid: 4fe4a625a285df247a238d394ff4f4b9, type: 3}
-  - {fileID: 21300000, guid: 97b4003326481354d863370b8a2e554c, type: 3}
-  - {fileID: 21300000, guid: fd042952214efbc4d816ecd8e3d368ab, type: 3}
+  - {fileID: 21300000, guid: d0474dc33e1f46047be946e5aaf53251, type: 3}
+  - {fileID: 21300000, guid: 28e22a92148c79c47885420014fdc2c9, type: 3}
+  - {fileID: 21300000, guid: dfdfc07abc3179e4ba628be6f01bd008, type: 3}
+  - {fileID: 21300000, guid: afcb9b4c67bdfd94e83b1b273a0fd3fa, type: 3}
+  - {fileID: 21300000, guid: cf24fe795ac640148a76a0c721530f43, type: 3}

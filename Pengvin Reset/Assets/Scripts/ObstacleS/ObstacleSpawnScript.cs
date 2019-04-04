@@ -40,7 +40,7 @@ public class ObstacleSpawnScript : MonoBehaviour
     {
         newSpawnRate += Time.deltaTime;
 
-        if (Time.time > nextSpawn && Time.time > 14)
+        if (Time.time > nextSpawn && Time.time > 1)
         {
             nextSpawn = Time.time + spawnRate;
             rndY = Random.Range(-7f, -1f);
@@ -52,8 +52,9 @@ public class ObstacleSpawnScript : MonoBehaviour
             spriteRenderer.sprite = obstacles[spriteType];
         }
 
-        if (newSpawnRate > spawnRateChangeTime && spawnRate > 5)
+        if (newSpawnRate > spawnRateChangeTime && spawnRate > 8)
         {
+            ObstacleMovement.speed += 0.002f;
             spawnRate -= spawnRateChange;
             newSpawnRate = 0;
         }
