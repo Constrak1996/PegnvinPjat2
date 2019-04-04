@@ -35,7 +35,7 @@ public class Health : MonoBehaviour
     /// </summary>
     void Update()
     {
-        healthText.text = "Hp left:" + health;
+        healthText.text = "Liv: " + health;
 
         if (health <= 0)
         {
