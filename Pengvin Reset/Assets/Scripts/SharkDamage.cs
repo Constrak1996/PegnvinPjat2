@@ -9,7 +9,7 @@ public class SharkDamage : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         DamageCooldown();
-        if (other.tag == "Shark")
+        if (other.tag == "Shark" && attackAble == true)
         {
             Health.health -= 1;
             DamageCooldown();
