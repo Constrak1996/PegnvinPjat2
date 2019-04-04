@@ -16,6 +16,6 @@ public class DeathScreen : MonoBehaviour
 
     public void Update()
     {
-        scoreText.text = "Highscore: " + Health.deathScore;
+        scoreText.text = "Highscore: " + Score.score;
     }
 }
