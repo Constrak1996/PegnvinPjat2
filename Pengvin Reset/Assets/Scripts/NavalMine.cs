@@ -39,7 +39,7 @@ public class NavalMine : MonoBehaviour
         newSpawnRate += Time.deltaTime;
 
 
-        if (Time.time > nextSpawn && Time.time > 20)
+        if (Time.time > nextSpawn && Time.time > 1)
         {
             nextSpawn = Time.time + spawnRate;
             rndY = Random.Range(-7f, -1f);

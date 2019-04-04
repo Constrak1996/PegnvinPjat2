@@ -67,6 +67,9 @@ public class PlayerCollision : MonoBehaviour
         }
         else if (collision.tag == "NavalMine")
         {
+            Health.health--;
+            PlayerMovement.stunned = true;
+            PlayerMovement.explosionKnockback = true;
             StartCoroutine(SpawnExplosion());
             Destroy(collision.gameObject);
         }
