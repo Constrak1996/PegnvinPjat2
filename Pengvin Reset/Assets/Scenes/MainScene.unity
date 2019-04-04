@@ -7605,6 +7605,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacle: {fileID: 2708810156318443083, guid: e21748b207024224cbad3c5246e99bd5,
     type: 3}
+  obstacles:
+  - {fileID: 21300000, guid: 648520c8b0f468549aee190a3c507b75, type: 3}
+  - {fileID: 21300000, guid: 1ffa5f6182d59e243b50c44305eb52b3, type: 3}
+  - {fileID: 21300000, guid: 93bd7a19c0e582043a7a594090e9af9f, type: 3}
 --- !u!1 &1243956052
 GameObject:
   m_ObjectHideFlags: 0
@@ -8403,6 +8407,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6137709314597395021, guid: ff9175890785d9846a3af4f9e9ebd52d,
+        type: 3}
+      propertyPath: m_TagString
+      value: ScrapFish
+      objectReference: {fileID: 0}
     - target: {fileID: 6137709315141804389, guid: ff9175890785d9846a3af4f9e9ebd52d,
         type: 3}
       propertyPath: m_Name
@@ -8427,11 +8436,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6137709314597395021, guid: ff9175890785d9846a3af4f9e9ebd52d,
-        type: 3}
-      propertyPath: m_TagString
-      value: ScrapFish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff9175890785d9846a3af4f9e9ebd52d, type: 3}
