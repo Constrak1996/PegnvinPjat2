@@ -1282,7 +1282,7 @@ GameObject:
   - component: {fileID: 1474261075}
   - component: {fileID: 1474261078}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Luk tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1380,7 +1380,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 422317643cad5874ea18533ffc771b7d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ce7a048dae146145aab5895f956a2f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1522,7 +1522,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: aaeb5e138c02b9244b86c01e298f0d3a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72651cea3f8327a45a77710870428220, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1674,7 +1674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1972879835
 RectTransform:
   m_ObjectHideFlags: 0
