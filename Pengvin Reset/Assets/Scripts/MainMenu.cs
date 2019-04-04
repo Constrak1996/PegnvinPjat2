@@ -40,7 +40,7 @@ public class MainMenu : MonoBehaviour
         }
         else
         {
-            soundMute = true;
+            soundMute = false;
         }
     }
 
