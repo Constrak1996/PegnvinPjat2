@@ -91,10 +91,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 441990580454816587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4735aec08830854098c57f7361e498d, type: 3}
+  m_Script: {fileID: 11500000, guid: cf71d1d2befd2e04db6fa9bfc63241b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  healthPrefab: {fileID: 441990580454816587}
+  respawnTime: 0
 --- !u!50 &3383322990601770556
 Rigidbody2D:
   serializedVersion: 4
