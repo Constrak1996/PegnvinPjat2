@@ -4711,9 +4711,9 @@ GameObject:
   - component: {fileID: 8732769545361582846}
   - component: {fileID: 8732769545361582847}
   - component: {fileID: 1703766295}
-  - component: {fileID: 215454347}
   - component: {fileID: 5188769859018323550}
   - component: {fileID: 777057486579648495}
+  - component: {fileID: 215454347}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4799,8 +4799,7 @@ MonoBehaviour:
   boostPower: 5
   boostCooldown: 2
   obstacleBouncePower: 2
-  joystick: {fileID: 4378080642034543933, guid: 588462c34cc79c847978ad6477ddd774,
-    type: 3}
+  joystick: {fileID: 0}
 --- !u!50 &8732769545361582847
 Rigidbody2D:
   serializedVersion: 4
@@ -4836,18 +4835,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 7185084335481446077, guid: ae2218a9282d1cb49b14273ab2dcfd50,
     type: 3}
---- !u!114 &215454347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8732769545361582842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53093d34d43ec1c4cb1300f7c9769693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &5188769859018323550
 Animator:
   serializedVersion: 3
@@ -4893,20 +4880,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11.438086, y: 4.541379}
   m_EdgeRadius: 0
---- !u!114 &1703766295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8732769545361582842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2488b3730f11bc45a664d2fc09e6f1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionParticle: {fileID: 0}
---- !u!114 &1439834800
+--- !u!114 &215454347
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
