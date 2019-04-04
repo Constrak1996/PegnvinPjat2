@@ -269,7 +269,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8732769545361582846, guid: 3e009d45cb473044892ebcd9d428eeb7,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1676284241}
+    - target: {fileID: 1703766295, guid: 3e009d45cb473044892ebcd9d428eeb7, type: 3}
+      propertyPath: explosionParticle
+      value: 
+      objectReference: {fileID: 7185084335481446077, guid: ae2218a9282d1cb49b14273ab2dcfd50,
+        type: 3}
+    - target: {fileID: 8732769545361582841, guid: 3e009d45cb473044892ebcd9d428eeb7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 022a35e361562a14b8e85ab74deeefdd,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 1439834800, guid: 3e009d45cb473044892ebcd9d428eeb7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3e009d45cb473044892ebcd9d428eeb7, type: 3}
 --- !u!1 &109102907
 GameObject:
@@ -330,11 +347,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 5b608ab81fad8284c8ea1b5f6446ff2a, type: 3}
+    m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 2
     m_AlignByGeometry: 0
@@ -549,7 +566,7 @@ PrefabInstance:
     - target: {fileID: 8462441586125211342, guid: 30c9a94e07903c34ea9f88211674b784,
         type: 3}
       propertyPath: respawnTime
-      value: 2
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8462441586125211343, guid: 30c9a94e07903c34ea9f88211674b784,
         type: 3}
@@ -4967,7 +4984,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -270, y: -48}
+  m_AnchoredPosition: {x: -268.39, y: -48}
   m_SizeDelta: {x: 110, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891315652
@@ -4991,19 +5008,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
-    m_FontStyle: 1
+    m_Font: {fileID: 12800000, guid: 5b608ab81fad8284c8ea1b5f6446ff2a, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 300
     m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '                          : '
+  m_Text: ': '
 --- !u!222 &1891315653
 CanvasRenderer:
   m_ObjectHideFlags: 0
