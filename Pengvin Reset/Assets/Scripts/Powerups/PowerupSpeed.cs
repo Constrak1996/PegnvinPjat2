@@ -5,11 +5,11 @@ using UnityEngine;
 public class PowerupSpeed : MonoBehaviour
 {
     public GameObject speedPrefab;
-    public float respawnTime = 1.0f;
+    public float respawnTime;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(HealthWave());
+        StartCoroutine(SpeedWave());
     }
 
     private void SpawnSpeed()
@@ -18,7 +18,7 @@ public class PowerupSpeed : MonoBehaviour
         s.transform.position = new Vector2(20, Random.Range(-5, 3));
     }
 
-    IEnumerator HealthWave()
+    IEnumerator SpeedWave()
     {
         while (true)
         {

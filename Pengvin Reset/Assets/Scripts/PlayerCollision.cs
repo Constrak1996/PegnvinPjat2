@@ -30,7 +30,6 @@ public class PlayerCollision : MonoBehaviour
         if (collision.tag == "Obstacle")
         {
             PlayerMovement.stunned = true;
-            StartCoroutine(SpawnExplosion());
         }
         else if (collision.tag == "Fish")
         {
@@ -66,12 +65,11 @@ public class PlayerCollision : MonoBehaviour
             Health.health += 1;
             fishHeal = 0;
         }
-
-        else if (collision.tag == "WaterMine")
+        else if (collision.tag == "NavalMine")
         {
             StartCoroutine(SpawnExplosion());
+            Destroy(collision.gameObject);
         }
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)

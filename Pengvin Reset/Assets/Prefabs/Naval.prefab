@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2617757060878931697}
   m_Layer: 0
   m_Name: Naval
-  m_TagString: Obstacle
+  m_TagString: NavalMine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -259,6 +259,11 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1676284241}
+    - target: {fileID: 1703766295, guid: 3e009d45cb473044892ebcd9d428eeb7, type: 3}
+      propertyPath: explosionParticle
+      value: 
+      objectReference: {fileID: 7185084335481446077, guid: ae2218a9282d1cb49b14273ab2dcfd50,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e009d45cb473044892ebcd9d428eeb7, type: 3}
 --- !u!1 &109102907
@@ -535,6 +540,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462441586125211342, guid: 30c9a94e07903c34ea9f88211674b784,
+        type: 3}
+      propertyPath: respawnTime
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462441586125211343, guid: 30c9a94e07903c34ea9f88211674b784,
+        type: 3}
+      propertyPath: respawnTime
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30c9a94e07903c34ea9f88211674b784, type: 3}
@@ -4255,6 +4270,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6137709314597395021, guid: ff9175890785d9846a3af4f9e9ebd52d,
+        type: 3}
+      propertyPath: m_TagString
+      value: ScrapFish
+      objectReference: {fileID: 0}
     - target: {fileID: 6137709315141804389, guid: ff9175890785d9846a3af4f9e9ebd52d,
         type: 3}
       propertyPath: m_Name
@@ -4279,11 +4299,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6137709314597395021, guid: ff9175890785d9846a3af4f9e9ebd52d,
-        type: 3}
-      propertyPath: m_TagString
-      value: ScrapFish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff9175890785d9846a3af4f9e9ebd52d, type: 3}

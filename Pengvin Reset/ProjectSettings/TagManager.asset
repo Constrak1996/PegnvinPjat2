@@ -12,6 +12,7 @@ TagManager:
   - SixPackTrash
   - DeathWall
   - ScrapFish
+  - NavalMine
   layers:
   - Default
   - TransparentFX
