@@ -4713,7 +4713,7 @@ GameObject:
   - component: {fileID: 2359703629836883900}
   - component: {fileID: 1703766294}
   - component: {fileID: 1703766295}
-  - component: {fileID: 1439834800}
+  - component: {fileID: 215454347}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4878,8 +4878,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2488b3730f11bc45a664d2fc09e6f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionParticle: {fileID: 0}
---- !u!114 &1439834800
+  explosionParticle: {fileID: 7185084335481446077, guid: ae2218a9282d1cb49b14273ab2dcfd50,
+    type: 3}
+--- !u!114 &215454347
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
