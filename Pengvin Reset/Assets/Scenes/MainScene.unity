@@ -179,6 +179,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1685163530662295014, guid: 1d09bcaffc93ef14c9a0715b934d08e0,
+        type: 3}
+      propertyPath: spawnRateChangeTime
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685163530662295014, guid: 1d09bcaffc93ef14c9a0715b934d08e0,
+        type: 3}
+      propertyPath: spawnRate
+      value: 45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d09bcaffc93ef14c9a0715b934d08e0, type: 3}
 --- !u!4 &56246338 stripped
@@ -5374,12 +5384,12 @@ PrefabInstance:
     - target: {fileID: 2904944665890474951, guid: 21a71680b0251a14fa6873096fe18d2b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.603765
+      value: 3.34
       objectReference: {fileID: 0}
     - target: {fileID: 2904944665890474951, guid: 21a71680b0251a14fa6873096fe18d2b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9699509
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 2904944665890474951, guid: 21a71680b0251a14fa6873096fe18d2b,
         type: 3}
@@ -5425,6 +5435,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904944665890474948, guid: 21a71680b0251a14fa6873096fe18d2b,
+        type: 3}
+      propertyPath: obstacles.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: d0474dc33e1f46047be946e5aaf53251,
+        type: 3}
+    - target: {fileID: 2904944665890474948, guid: 21a71680b0251a14fa6873096fe18d2b,
+        type: 3}
+      propertyPath: obstacles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 28e22a92148c79c47885420014fdc2c9,
+        type: 3}
+    - target: {fileID: 2904944665890474948, guid: 21a71680b0251a14fa6873096fe18d2b,
+        type: 3}
+      propertyPath: obstacles.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: dfdfc07abc3179e4ba628be6f01bd008,
+        type: 3}
+    - target: {fileID: 2904944665890474948, guid: 21a71680b0251a14fa6873096fe18d2b,
+        type: 3}
+      propertyPath: obstacles.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: afcb9b4c67bdfd94e83b1b273a0fd3fa,
+        type: 3}
+    - target: {fileID: 2904944665890474948, guid: 21a71680b0251a14fa6873096fe18d2b,
+        type: 3}
+      propertyPath: obstacles.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: cf24fe795ac640148a76a0c721530f43,
+        type: 3}
+    - target: {fileID: 2904944665890474948, guid: 21a71680b0251a14fa6873096fe18d2b,
+        type: 3}
+      propertyPath: spawnRate
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21a71680b0251a14fa6873096fe18d2b, type: 3}
