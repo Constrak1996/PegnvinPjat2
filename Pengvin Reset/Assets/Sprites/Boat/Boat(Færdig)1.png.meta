@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Pengvin Reset/Assets/Sprites/Boat/Boat(Færdig)1.png.meta
+guid: b212ea499df66fe489c664612d3b2aaf
+=======
 guid: f614b5dd725bd0d40919e300b35dc757
+>>>>>>> 33b42db27e2b51cb293d3eaa904fc6ff52d94ef9:Pengvin Reset/Assets/Sprites/Boat/Båd(Færdig).png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -75,7 +79,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD:Pengvin Reset/Assets/Sprites/Boat/Boat(Færdig)1.png.meta
+    spriteID: 74e8620b3bd07f44d989b060cad3b6d1
+=======
     spriteID: 784e1ab18bc73fa4a803067cc5e6a918
+>>>>>>> 33b42db27e2b51cb293d3eaa904fc6ff52d94ef9:Pengvin Reset/Assets/Sprites/Boat/Båd(Færdig).png.meta
     vertices: []
     indices: 
     edges: []
