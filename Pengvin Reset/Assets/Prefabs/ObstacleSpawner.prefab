@@ -45,6 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacle: {fileID: 3318416344964811514, guid: 6a1b0b3d3f49e8541ac0953a1583f986,
     type: 3}
+  spawnRate: 12
+  spawnRateChange: 1
+  spawnRateChangeTime: 25
   obstacles:
   - {fileID: 21300000, guid: 00064a52eb8a2df4ea9bd24f99d63132, type: 3}
   - {fileID: 21300000, guid: a6d2b2266fcba0f42a963e18eaeaeb60, type: 3}
