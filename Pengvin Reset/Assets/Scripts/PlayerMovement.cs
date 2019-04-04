@@ -116,6 +116,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (slowed)
         {
+            if (direction == Vector2.zero)
+            {
+                transform.Translate(-0.025f, 0, 0);
+            }
             speed = 3;
         }
         else if (!slowed)

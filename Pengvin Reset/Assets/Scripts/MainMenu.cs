@@ -27,6 +27,7 @@ public class MainMenu : MonoBehaviour
     public void ToNewScene(int scene)
     {
         SceneManager.LoadScene(scene);
+        PlayerMovement.slowed = false;
     }
 
     public void Mute()

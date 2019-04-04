@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5811700186025846689}
   - component: {fileID: 8929652982203664454}
   - component: {fileID: 5170471603307789750}
+  - component: {fileID: 4018818064854171640}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -120,7 +121,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3318416344964811514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23bd123b1336fef468a50249eea3c980, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fff73fca98803240a3ba99c5a6df47b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myCurve:
@@ -147,3 +148,19 @@ MonoBehaviour:
     m_PreInfinity: 0
     m_PostInfinity: 0
     m_RotationOrder: 4
+--- !u!58 &4018818064854171640
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3318416344964811514}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 2.1286705}
+  serializedVersion: 2
+  m_Radius: 0.669142

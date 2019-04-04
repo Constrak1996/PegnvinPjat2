@@ -18,9 +18,12 @@ public class SixPackTrashMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x <= -12)
+        if (Time.timeScale == 1)
         {
-            Destroy(gameObject);
+            if (transform.position.x <= -12)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
