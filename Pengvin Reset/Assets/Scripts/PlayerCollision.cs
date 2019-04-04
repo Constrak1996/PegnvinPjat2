@@ -33,6 +33,7 @@ public class PlayerCollision : MonoBehaviour
         {
             Score.score++;
             fishHeal += 1;
+            Debug.Log(fishHeal);
             Destroy(collision.gameObject);
         }
         else if (collision.tag == "DeathWall")
@@ -52,14 +53,15 @@ public class PlayerCollision : MonoBehaviour
             Destroy(collision.gameObject);
             StartCoroutine(SpeedBoost());
         }
-        else if (fishHeal == 5)
-        {
-            Health.health += 1;
-            fishHeal = 0;
-        }
         else if (collision.tag == "SixPackTrash")
         {
             PlayerMovement.slowed = true;
+        }
+
+        if (fishHeal == 5 && Health.health < 5)
+        {
+            Health.health += 1;
+            fishHeal = 0;
         }
     }
 
