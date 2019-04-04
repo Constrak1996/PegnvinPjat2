@@ -214,6 +214,11 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1518819150}
+    - target: {fileID: 8732769545361582846, guid: 3e009d45cb473044892ebcd9d428eeb7,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1518819150}
     - target: {fileID: 8732769545361582840, guid: 3e009d45cb473044892ebcd9d428eeb7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -269,21 +274,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8732769545361582846, guid: 3e009d45cb473044892ebcd9d428eeb7,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1676284241}
-    - target: {fileID: 1703766295, guid: 3e009d45cb473044892ebcd9d428eeb7, type: 3}
-      propertyPath: explosionParticle
-      value: 
-      objectReference: {fileID: 7185084335481446077, guid: ae2218a9282d1cb49b14273ab2dcfd50,
-        type: 3}
     - target: {fileID: 8732769545361582841, guid: 3e009d45cb473044892ebcd9d428eeb7,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 022a35e361562a14b8e85ab74deeefdd,
+        type: 3}
+    - target: {fileID: 1703766295, guid: 3e009d45cb473044892ebcd9d428eeb7, type: 3}
+      propertyPath: explosionParticle
+      value: 
+      objectReference: {fileID: 7185084335481446077, guid: ae2218a9282d1cb49b14273ab2dcfd50,
         type: 3}
     m_RemovedComponents:
     - {fileID: 1439834800, guid: 3e009d45cb473044892ebcd9d428eeb7, type: 3}
@@ -1862,6 +1862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748974457772105729, guid: cc55c9ac0ad2ab44b9376ff8f7b33f5b,
+        type: 3}
+      propertyPath: spawnRateChangeTime
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc55c9ac0ad2ab44b9376ff8f7b33f5b, type: 3}
@@ -5419,7 +5424,12 @@ PrefabInstance:
     - target: {fileID: 2904944665890474948, guid: 21a71680b0251a14fa6873096fe18d2b,
         type: 3}
       propertyPath: spawnRate
-      value: 3
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904944665890474948, guid: 21a71680b0251a14fa6873096fe18d2b,
+        type: 3}
+      propertyPath: spawnRateChangeTime
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21a71680b0251a14fa6873096fe18d2b, type: 3}
