@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SixPackTrashMovement : MonoBehaviour
 {
-    public float speed;
+    public static float speed = 1.5f;
 
     private Rigidbody2D rb;
     // Start is called before the first frame update
@@ -24,6 +24,10 @@ public class SixPackTrashMovement : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+        else
+        {
+
         }
     }
 }

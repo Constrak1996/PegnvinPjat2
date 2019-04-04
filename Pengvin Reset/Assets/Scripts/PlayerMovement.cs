@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     public static bool explosionKnockback;
 
+    public static float trashDragVariable = 0.025f;
+
     private bool usedBoost;
 
     public float boostPower;
@@ -135,7 +137,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (direction == Vector2.zero)
             {
-                transform.Translate(-0.025f, 0, 0);
+                transform.Translate(-trashDragVariable, 0, 0);
             }
             speed = 3;
         }
