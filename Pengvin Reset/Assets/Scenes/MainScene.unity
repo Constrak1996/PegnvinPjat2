@@ -127,7 +127,7 @@ PrefabInstance:
     - target: {fileID: 1685163530662295015, guid: 1d09bcaffc93ef14c9a0715b934d08e0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.6424704
+      value: 3.15
       objectReference: {fileID: 0}
     - target: {fileID: 1685163530662295015, guid: 1d09bcaffc93ef14c9a0715b934d08e0,
         type: 3}
@@ -9007,6 +9007,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6137709314597395021, guid: ff9175890785d9846a3af4f9e9ebd52d,
+        type: 3}
+      propertyPath: m_TagString
+      value: ScrapFish
+      objectReference: {fileID: 0}
     - target: {fileID: 6137709315141804389, guid: ff9175890785d9846a3af4f9e9ebd52d,
         type: 3}
       propertyPath: m_Name
@@ -9031,11 +9036,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6137709314597395021, guid: ff9175890785d9846a3af4f9e9ebd52d,
-        type: 3}
-      propertyPath: m_TagString
-      value: ScrapFish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff9175890785d9846a3af4f9e9ebd52d, type: 3}
