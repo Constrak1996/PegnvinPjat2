@@ -34,7 +34,7 @@ public class SixPackTrashSpawner : MonoBehaviour
         if (Time.time > nextSpawn)
         {
             nextSpawn = Time.time + spawnRate;
-            rndY = Random.Range(-6f, 1.3f);
+            rndY = Random.Range(-4.5f, 1.3f);
             whereToSpawn = new Vector2(transform.position.x, rndY);
 
             GameObject gameObject = Instantiate(obstacle, whereToSpawn, Quaternion.identity);
