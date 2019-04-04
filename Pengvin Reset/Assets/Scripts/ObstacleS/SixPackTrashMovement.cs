@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class SixPackTrashMovement : MonoBehaviour
 {
-    private float speed = -0.015f;
+    public float speed;
+
+    private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+        rb = this.GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector2(-speed, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(speed, 0, 0);
-
         if (transform.position.x <= -12)
         {
             Destroy(gameObject);

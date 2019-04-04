@@ -6703,9 +6703,9 @@ MonoBehaviour:
   obstacle: {fileID: 2708810156318443083, guid: e21748b207024224cbad3c5246e99bd5,
     type: 3}
   obstacles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 648520c8b0f468549aee190a3c507b75, type: 3}
+  - {fileID: 21300000, guid: 1ffa5f6182d59e243b50c44305eb52b3, type: 3}
+  - {fileID: 21300000, guid: 93bd7a19c0e582043a7a594090e9af9f, type: 3}
 --- !u!1 &752652490
 GameObject:
   m_ObjectHideFlags: 0
