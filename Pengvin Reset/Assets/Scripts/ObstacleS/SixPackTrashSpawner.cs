@@ -15,6 +15,13 @@ public class SixPackTrashSpawner : MonoBehaviour
     private float spawnRate = 8;
 
     private float nextSpawn = 0.0f;
+
+    private int spriteType;
+
+    private SpriteRenderer spriteRenderer;
+
+    public Sprite[] obstacles = new Sprite[3];
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +36,11 @@ public class SixPackTrashSpawner : MonoBehaviour
             nextSpawn = Time.time + spawnRate;
             rndY = Random.Range(-6f, 1.3f);
             whereToSpawn = new Vector2(transform.position.x, rndY);
-            Instantiate(obstacle, whereToSpawn, Quaternion.identity);
+
+            GameObject gameObject = Instantiate(obstacle, whereToSpawn, Quaternion.identity);
+            spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+            spriteType = Random.Range(0, 3);
+            spriteRenderer.sprite = obstacles[spriteType];
         }
 
         if (Time.deltaTime > newSpawnRate && spawnRate > 0)
