@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float boostPower;
 
+    public float boostCooldown = 2f;
+
     public float obstacleBouncePower;
 
     private Vector2 direction;
@@ -165,7 +167,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator BoostCooldown()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(boostCooldown);
         usedBoost = false;
     }
 
