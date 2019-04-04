@@ -9,7 +9,6 @@ public class ExplosionSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        explosion.GetComponent<ParticleSystem>().enableEmission = false;
     }
 
     // Update is called once per frame
@@ -22,12 +21,7 @@ public class ExplosionSpawn : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            explosion.GetComponent<ParticleSystem>().Play();
-        }        
-    }
 
-    IEnumerable stopExplosion()
-    {
-        yield return new WaitForSeconds(0.4f);
+        }        
     }
 }

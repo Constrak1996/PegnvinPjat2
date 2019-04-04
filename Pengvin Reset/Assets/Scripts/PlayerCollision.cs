@@ -12,6 +12,8 @@ public class PlayerCollision : MonoBehaviour
     private float speedBoostTime;
     float timeLeft = 30.0f;
 
+    public GameObject explosionParticle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,7 @@ public class PlayerCollision : MonoBehaviour
         if (collision.tag == "Obstacle")
         {
             PlayerMovement.stunned = true;
+            StartCoroutine(SpawnExplosion());
         }
         else if (collision.tag == "Fish")
         {
@@ -61,6 +64,10 @@ public class PlayerCollision : MonoBehaviour
         {
             PlayerMovement.slowed = true;
         }
+        else if (collision.tag == "WaterMine")
+        {
+            StartCoroutine(SpawnExplosion());
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -75,5 +82,13 @@ public class PlayerCollision : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         PlayerMovement.speed = 20;
+    }
+
+    IEnumerator SpawnExplosion()
+    {
+        GameObject explosion = Instantiate(explosionParticle, transform.position, transform.rotation) as GameObject;
+        explosion.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2);
+        Destroy(explosion.gameObject);
     }
 }
