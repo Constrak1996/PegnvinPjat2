@@ -5,18 +5,14 @@ using UnityEngine;
 public class Tutorial : MonoBehaviour
 {
     // Start is called before the first frame update
-
-    public GameObject tutorialMenu;
-
-    public void OpenTutorial()
+    void Start()
     {
-        tutorialMenu.SetActive(true);
+        
     }
 
-    public void CloseTutorial()
+    // Update is called once per frame
+    void Update()
     {
-        tutorialMenu.SetActive(false);
+        
     }
-
-   
 }

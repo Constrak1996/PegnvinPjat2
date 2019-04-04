@@ -35,7 +35,6 @@ public class PlayerCollision : MonoBehaviour
         {
             Score.score++;
             fishHeal += 1;
-            Debug.Log(fishHeal);
             Destroy(collision.gameObject);
         }
         else if (collision.tag == "DeathWall")
@@ -67,6 +66,9 @@ public class PlayerCollision : MonoBehaviour
         }
         else if (collision.tag == "NavalMine")
         {
+            Health.health--;
+            PlayerMovement.stunned = true;
+            PlayerMovement.explosionKnockback = true;
             StartCoroutine(SpawnExplosion());
             Destroy(collision.gameObject);
         }
