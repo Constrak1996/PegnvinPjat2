@@ -47,7 +47,7 @@ MonoBehaviour:
     type: 3}
   spawnRate: 8
   spawnRateChange: 0.5
-  spawnRateChangeTime: 20
+  spawnRateChangeTime: 5
   obstacles:
   - {fileID: 21300000, guid: 648520c8b0f468549aee190a3c507b75, type: 3}
   - {fileID: 21300000, guid: 1ffa5f6182d59e243b50c44305eb52b3, type: 3}
