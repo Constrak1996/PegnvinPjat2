@@ -83,11 +83,9 @@ public class PlayerMovement : MonoBehaviour
                 currentLerpTime = lerpTime;
             }
 
-            if (Input.GetKeyDown(KeyCode.Space) && !usedBoost)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                GetComponent<Rigidbody2D>().AddForce(direction * boostPower, ForceMode2D.Impulse);
-                usedBoost = true;
-                StartCoroutine(BoostCooldown());
+                Dash();
             }
         }
         if (stunned is true)
@@ -136,6 +134,16 @@ public class PlayerMovement : MonoBehaviour
         {
             //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
             rb2d.AddForce(movement * speed);
+        }
+    }
+
+    void Dash()
+    {
+        if (!usedBoost)
+        {
+            rb2d.AddForce(direction * boostPower, ForceMode2D.Impulse);
+            usedBoost = true;
+            StartCoroutine(BoostCooldown());
         }
     }
 
